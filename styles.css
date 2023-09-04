@@ -1,0 +1,83 @@
+.flex-container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+}
+
+.mainContent {
+    width: 30%;
+    display: grid;
+    grid-template-rows: min-content min-content;
+    gap: 50px;
+}
+
+.searchInfoDiv {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    flex-direction: column;
+}
+
+#searchCmpName {
+    font-size: 5rem;
+}
+
+#searchInput {
+    padding: 10px;
+    width: min(50%, 450px);
+    border-radius: 50px;
+    text-align: center;
+}
+
+.searchImpLink {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.linkCard {
+    flex-basis: max(16.66%, 200px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media screen and (max-width: 1000px) {
+    .mainContent {
+        width: 50%;
+    }
+
+    #searchCmpName {
+        font-size: 3rem;
+    }
+
+    #searchInput {
+        padding: 8px;
+    }
+
+    .linkCard {
+        flex-basis: max(25%);
+    }
+    
+}
+
+@media screen and (max-width: 600px) {
+    .mainContent {
+        width: 100%;
+    }
+
+    #searchCmpName {
+        font-size: 2rem;
+    }
+
+    #searchInput {
+        padding: 5px;
+    }
+
+    .linkCard {
+        flex-basis: max(33%);
+    }
+    
+}
